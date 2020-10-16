@@ -25,24 +25,12 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               GetX<GlobalController>(
                   builder: (_) => Text(
-                    'clicks: ${controller.count}',
-                  )),
+                        'clicks: ${controller.count}',
+                      )),
               RaisedButton(
-                child: Text("Page 1"),
+                child: Text("Navigation Example"),
                 onPressed: () {
-                  Get.toNamed('page1');
-                },
-              ),
-              RaisedButton(
-                child: Text("Page 2"),
-                onPressed: () {
-                  Get.toNamed('page2');
-                },
-              ),
-              RaisedButton(
-                child: Text("Page 3"),
-                onPressed: () {
-                  Get.toNamed('page3');
+                  Get.toNamed('navigation');
                 },
               ),
             ],
