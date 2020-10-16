@@ -33,6 +33,12 @@ class _HomePageState extends State<HomePage> {
                   Get.toNamed('navigation');
                 },
               ),
+              RaisedButton(
+                child: Text("Toast Example"),
+                onPressed: () {
+                  Get.toNamed('toastScreen');
+                },
+              ),
             ],
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example/ui/screen/toast/toast_screen.dart';
 import 'package:get/get.dart';
 
 import 'ui/screen/home_page.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/page1", page: () => FirstScreen()),
         GetPage(name: "/page2", page: () => SecondScreen()),
         GetPage(name: "/page3", page: () => ThirdScreen()),
+        GetPage(name: "/toastScreen", page: () => ToastScreen()),
       ],
     );
   }
